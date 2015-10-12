@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Multiplication test</title>
+		<link type="text/css" rel="stylesheet" href="test.css">
+		<script src="mathtest.js"></script>
+	</head>
+	
+	<body>
+		<div id="main">
+			<div id="content">
+				<div id="menu">
+					<header>
+						<h1>Test options menu</h1>
+						<form>
+							<ul>
+								<li><p>Numbers range:</p><input type="text" id="maxRandNumber"></li>
+								<li><p>Number of problems:</p><input type="text" id="maxRandNumber"></li>
+								<li><input type="checkbox" name="special" value="SpecialTest">Special Tests</li>
+								<li><input type="radio" name="specialCase" value="Multi2">Multiplication by 2</li>	
+								<li><input type="radio" name="specialCase" value="Multi5">Multiplication by 5</li>
+								<li><input type="radio" name="specialCase" value="Multi25">Multiplication by 25</li>
+								<li><input type="radio" name="specialCase" value="Div2">Division by 2</li>
+								<li><input type="radio" name="specialCase" value="Div5">Division by 5</li>
+							</ul>
+						</form>
+					</header>
+				</div>
+				
+				<div id="test">
+					<header>
+						<h1>Multiplication test</h1>
+					</header>
+					<p id="equation">
+					<span id="randomEquation">Equations to solve will show up here</span><span id="current"></span>
+					</p>
+					<div id="userInput">
+						<form>
+							<input type="text" id="answer">
+							<input type="button" id="answerButton" value="Start">
+						</form>
+					</div>
+					<div id="results">
+						<p id="result"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+			
+			

@@ -1,0 +1,67 @@
+body {
+	font: small Arial, sans-sefir;
+	background-color: #d9d9d9;
+}
+
+div#main {
+	display:table;
+	border-spacing: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	border: solid 1px black;
+	text-align: center;
+	background-color: white;
+}
+
+div#content {
+	display: table-row;
+}
+
+div#main div div  {
+	background-color: #fdffcb;
+}
+
+div#menu {
+	display: table-cell;
+	width: 20%;
+	padding: 10px;
+	border: solid 1px black;
+	vertical-align: top;
+}
+
+div#test {
+	display: table-cell;
+	width: 80%;
+	border: solid 1px black;
+	vertical-align: top;
+}
+
+#test header {
+	margin: 20px 0 50px 0px;
+}
+
+#equation {
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+#current {
+	margin-left: 50px;
+}
+
+ul {
+	list-style-type: none;
+	text-align:left;
+	padding: 0px;
+}
+
+ul li {
+	padding: 5px 0px 5px 0px;
+	margin: 5px 0px 5px 0px;
+}
+
+ul p {
+	margin: 5px;
+}
