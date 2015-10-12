@@ -1,0 +1,44 @@
+<!Doctype html>
+<html>
+	<head>
+	<script>
+		function appendRow() {
+		for (var i = 0; i < 10; i++) {
+				var newRow = document.createElement("tr");
+				newRow.setAttribute("class","answer");
+				for (var j = 0; j < 2; j++) {
+					var newCell = document.createElement("td");
+					newCell.setAttribute("class","cell");
+					if (j === 0 ) {
+						newCell.setAttribute("style","background-color: red");
+					}
+					newCell.innerHTML = i + j;
+					newRow.appendChild(newCell);
+				}
+				var table = document.getElementById("table1");
+				table.appendChild(newRow);
+			}
+		}
+		window.onload = appendRow;
+	</script>
+	<style>
+		.cell {
+			border: solid 1px black;
+			text-align: center;
+		}
+		table {
+			border: solid 1px black;
+			border-collapse: collapse;
+		}
+	</style>
+	</head>
+	
+	<body>
+		<table id="table1">
+			<tr>
+				<th>Equation</th>
+				<th>Result</th>
+			</tr>
+		</table>
+	</body>
+</html>	
